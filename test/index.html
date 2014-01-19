@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>HelpPag.es Template</title>
+		<!-- Load the newest template file from the site so you always have the latest one -->
+		<link rel="stylesheet" href="http://docs.helppag.es/css/bootstrap.min.css">
+		<link rel="stylesheet" href="http://docs.helppag.es/css/xcode.css">
+		<link rel="stylesheet" href="http://docs.helppag.es/css/application.css">
+		<link rel="stylesheet" href="../stylesheet.css">
+
+		 <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+		 <script src="application.js"></script>
+	</head>
+	<body style="">
+		<div class="container" id="main-content">
+			<div class="row">
+				<div class="col-sm-9">
+					<h1 class="title"><a href="#">HelpPag.es Template</a></h1>
+				</div>
+				<div class="col-sm-3">
+					<form id="search">
+						<input type="text" class="form-control" placeholder="Search..." id="search-bar">
+					</form>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-sm-3" id="sidebar">
+					<ul id="categories" class="list-unstyled">
+						<li class="category">
+							<ul class="list-unstyled root">
+								<li class="pages">
+									<ul class="nav nav-pills nav-stacked">
+										<li class="page-list">
+											<a href="#">
+												Clear Theme
+											</a>
+										</li>
+									</ul>
+								</li>
+								<li class="categories">
+									<ul class="nav nav-pills nav-stacked">
+										<li class="category">
+											<a class="category-toggle">
+												<span class="glyphicon glyphicon-chevron-down"></span>Themes
+											</a>
+											<ul class="list-unstyled non-root">
+												<li class="pages">
+													<ul class="nav nav-pills nav-stacked">
+														<li class="page-list">
+															<a href="#brown-bag">
+																Brown Bag
+															</a>
+														</li>
+														<li class="page-list">
+															<a href="#minimal-theme">
+																Minimal
+															</a>
+														</li>
+													</ul>
+												</li>
+											</ul>
+										</li>
+									</ul>
+								</li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+				<div class="col-sm-9" id="inner-content">
+					<div class="page-template">
+						<div class="row">
+							<div class="col-sm-12">
+								<div class="page-container">
+									<div class="page-toc">
+										<h4>Contents</h4>
+										<ul class="nav">
+											<li>
+												<a class="toc-link toc">Link 1</a>
+											</li>
+											<li>
+												<a class="toc-link toc">Link 2</a>
+											</li>
+											<li>
+												<a class="toc-link toc">Long Link 3 - this one is really quite long</a>
+											</li>
+										</ul>
+									</div>
+									<div class="page">
+										<div class="page-contents pull-right">
+											<a class="toc btn btn-default"><span class="glyphicon glyphicon-align-left"></span></a>
+										</div>
+										<h1>H1 Title</h1>
+										<h2>H2 Title <a class="toc-link btn btn-xs btn-default">top</a></h2>
+										<h3>H3 Title <a class="toc-link btn btn-xs btn-default">top</a></h3>
+										<h4>H4 Title <a class="toc-link btn btn-xs btn-default">top</a></h4>
+										<h5>H5 Title</h5>
+
+										<h2>Lists</h2>
+										<ul>
+											<li>List item 1</li>
+											<li>List item 2</li>
+										</ul>
+										<ol>
+											<li>List item 1</li>
+											<li>List item 2</li>
+										</ol>
+
+										<h2>Paragraph</h2>
+										<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis, aliquid cumque optio aut ex libero velit nam voluptatibus officiis placeat ratione soluta? Similique, sit saepe libero accusamus excepturi laborum fugit! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit, explicabo, officiis voluptas animi fugiat quisquam itaque omnis deserunt officia natus ullam at tenetur excepturi illo vel error sit odit aliquam. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et, eveniet eum perspiciatis dicta laudantium autem omnis ab ea architecto alias voluptatum sit pariatur iure doloribus voluptatibus repellat doloremque incidunt reprehenderit.</p>
+
+										<h2>Code Syntax</h2>
+<pre><code class="hljs">
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">$initHighlight</span><span class="hljs-params">(block, flags)</span> {</span>
+  <span class="hljs-keyword">try</span> {
+    <span class="hljs-keyword">if</span> (block.className.search(<span class="hljs-regexp">/\bno\-highlight\b/</span>) != -<span class="hljs-number">1</span>)
+      <span class="hljs-keyword">return</span> processBlock(block.function, <span class="hljs-literal">true</span>, <span class="hljs-number">0x0F</span>) + <span class="hljs-string">' class=""'</span>;
+  } <span class="hljs-keyword">catch</span> (e) {
+    <span class="hljs-comment">/* handle exception */</span>
+    <span class="hljs-keyword">var</span> e4x =
+        <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-title">div</span>&gt;</span>Example
+            <span class="hljs-tag">&lt;<span class="hljs-title">p</span>&gt;</span>1234<span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>;</span>
+  }
+  <span class="hljs-keyword">for</span> (<span class="hljs-keyword">var</span> i = <span class="hljs-number">0</span> / <span class="hljs-number">2</span>; i &lt; classes.length; i++) { <span class="hljs-comment">// "0 / 2" should not be parsed as regexp</span>
+    <span class="hljs-keyword">if</span> (checkCondition(classes[i]) === <span class="hljs-literal">undefined</span>)
+      <span class="hljs-keyword">return</span> <span class="hljs-regexp">/\d+[\s/]/g</span>;
+  }
+  console.log(<span class="hljs-built_in">Array</span>.every(classes, <span class="hljs-built_in">Boolean</span>));
+}
+</code></pre>
+
+										<h2>Tables</h2>
+										<table>
+										    <tbody>
+										    	<tr><th>Title Field</th><th>Title Field 2</th><th>Title Field 3</th></tr>
+										    	<tr><td>table content</td><td>table content</td><td>table content</td></tr>
+										    	<tr><td>table content</td><td>table content</td><td>table content</td></tr>
+										    	<tr><td>table content</td><td>table content</td><td>table content</td></tr>
+										    	<tr><td>table content</td><td>table content</td><td>table content</td></tr>
+										    	<tr><td>table content</td><td>table content</td><td>table content</td></tr>
+											</tbody>
+										</table>
+										<h2>Random Text</h2>
+										<code>Code tag</code>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-sm-12">
+								<div class="page-info">
+									
+									<span class="muted">Updated 2 hours ago | file-name.md</span>
+								</div>
+							</div>
+						</div>
+						</div></div>
+							</div>
+							<div class="row">
+								<div class="col-sm-12">
+									<div class="footer">
+										<a href="http://www.helppag.es">Created with HelpPag.es</a>
+									</div>
+								</div>
+							</div>
+						</div>
+	</body>
+</html>

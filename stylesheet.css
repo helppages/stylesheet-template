@@ -1,0 +1,104 @@
+/**
+ * HelpPag.es stylesheet template
+ * (c) 2014 HelpPag.es and Ryan Quinn
+ *
+ * Drop this in your GitHub repository for your documentation and we'll
+ * load it with your documentation and style your docs
+ * 
+ * This will be loaded in addition to the theme you selected for your docs
+ * So make sure you've themed accordingly
+ */
+
+/**
+ * Generated from the Minimal Theme.  Change as you see fit.
+ */
+
+
+/*The title of the page overall*/
+.title {
+	
+}
+
+/*Link inside the title */
+.title a {
+	color:#000;
+}
+
+.muted {
+	font-size: .75em;
+	color: #999;
+}
+
+/*----- Sidebar -----*/
+#categories {
+}
+
+.nav li {
+	background-color:transparent;
+}
+
+.nav li a {
+	width:100%;
+	display:block;
+	cursor:pointer;
+	color:#000;
+}
+
+#categories .non-root li {
+	padding-left:10px;
+}
+
+#categories span.glyphicon {
+	margin-right:10px;
+}
+
+.nav li a:hover {
+	background: #e8e8e8;
+}
+
+/*----- Page ----*/
+
+.page-template {
+
+}
+
+.page-template .page-container {
+	z-index: 1;
+	background-color:#f1f1f1;
+}
+
+.page-container .page {
+	position: relative;
+	padding:20px;
+	background: #fff;
+	border:1px solid #efefef;
+	font-size:1.1em;
+	line-height:1.75em;
+}
+
+.page table {
+	width:100%;
+}
+
+.page table td, .page table th {
+	padding:5px 10px;
+	border:1px solid #e8e8e8;
+}
+
+.page table tr:nth-child(even) td {
+	background-color: #f1f1f1;
+}
+
+
+.page-template .page-info {
+
+}
+
+/*----- Footer -----*/
+.footer {
+	text-align:right;
+}
+
+.footer a {
+	color: #303030;
+}
