@@ -13,61 +13,63 @@
  * Generated from the Minimal Theme.  Change as you see fit.
  */
 
+body.custom-css {
+}
 
 /*The title of the page overall*/
-.title {
+.custom-css .title {
 	
 }
 
 /*Link inside the title */
-.title a {
+.custom-css .title a {
 	color:#000;
 }
 
-.muted {
+.custom-css .muted {
 	font-size: .75em;
 	color: #999;
 }
 
 /*----- Sidebar -----*/
-#categories {
+.custom-css #categories {
 }
 
-.nav li {
+.custom-css .nav li {
 	background-color:transparent;
 }
 
-.nav li a {
+.custom-css .nav li a {
 	width:100%;
 	display:block;
 	cursor:pointer;
 	color:#000;
 }
 
-#categories .non-root li {
+.custom-css #categories .non-root li {
 	padding-left:10px;
 }
 
-#categories span.glyphicon {
+.custom-css #categories span.glyphicon {
 	margin-right:10px;
 }
 
-.nav li a:hover {
+.custom-css .nav li a:hover {
 	background: #e8e8e8;
 }
 
 /*----- Page ----*/
 
-.page-template {
+.custom-css .page-template {
 
 }
 
-.page-template .page-container {
+.custom-css .page-template .page-container {
 	z-index: 1;
 	background-color:#f1f1f1;
 }
 
-.page-container .page {
+.custom-css .page-container .page {
 	position: relative;
 	padding:20px;
 	background: #fff;
@@ -76,29 +78,29 @@
 	line-height:1.75em;
 }
 
-.page table {
+.custom-css .page table {
 	width:100%;
 }
 
-.page table td, .page table th {
+.custom-css .page table td, .custom-css .page table th {
 	padding:5px 10px;
 	border:1px solid #e8e8e8;
 }
 
-.page table tr:nth-child(even) td {
+.custom-css .page table tr:nth-child(even) td {
 	background-color: #f1f1f1;
 }
 
 
-.page-template .page-info {
+.custom-css .page-template .page-info {
 
 }
 
 /*----- Footer -----*/
-.footer {
+.custom-css .footer {
 	text-align:right;
 }
 
-.footer a {
+.custom-css .footer a {
 	color: #303030;
 }
