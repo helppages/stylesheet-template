@@ -7,16 +7,17 @@ We offer a complete [stylesheet template](https://github.com/helppages/styleshee
 ## Considerations
 Just a few basic rules:
 
- * You can only have one stylesheet included in your repo
-    * If you include multiple, the last one will always overwrite the previous ones
+ * Multiple stylesheets are merged into a single one in alphabetical order
+ * We run the CSS through a sanitizer, so things like imports will get removed.
+   * Let us know if you need something special and we'll work with you.
  * Be nice, these are your users, don't do anything shady
- * Your stylesheet will be loaded on top of bootstrap in addition to whatever base theme you've selected for your documentation.  All of our base themes are included in the test file for your convenience
+ * Your stylesheet will be loaded on top of bootstrap.  The test file includes everything that will be included with your real docs.
 
 ## How to use
 Download the repo, launch the test/index.html file and start editing the stylesheet.css file.  Once your'e done, drop it in your documentation repo and push it up.  We'll take care of the rest.
 
-## But my styles aren't updating
+### But my styles aren't updating
 If you've just pushed your changes, then it's possible that we're in the process of pulling the changes.  The whole process can unfortunately take a bit of time, because we have to submit cache expires to a few places.
 
-## Contributing
+### Contributing
 Right now the css file is just the css from our Minimal theme.  It'll definitely be fleshed out better over time.  If you have some useful additions, please submit a pull request and we'll merge it in for everyone to use.

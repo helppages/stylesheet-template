@@ -1,167 +1,247 @@
-<!DOCTYPE html>
-<html>
-	<head>
-		<title>HelpPag.es Template</title>
-		<!-- Load the newest template file from the site so you always have the latest one -->
-		<link rel="stylesheet" href="http://docs.helppag.es/css/bootstrap.min.css">
-		<link rel="stylesheet" href="http://docs.helppag.es/css/xcode.css">
-		<link rel="stylesheet" href="http://docs.helppag.es/css/application.css">
-		<link rel="stylesheet" href="../stylesheet.css">
 
-		 <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
-		 <script src="application.js"></script>
-	</head>
-	<body style="" class="custom-css">
-		<div class="container" id="main-content">
-			<div class="row">
-				<div class="col-sm-9">
-					<h1 class="title"><a href="#">HelpPag.es Template</a></h1>
-				</div>
-				<div class="col-sm-3">
-					<form id="search">
-						<input type="text" class="form-control" placeholder="Search..." id="search-bar">
-					</form>
-				</div>
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name = "viewport" content = "initial-scale = 1.0, maximum-scale=1.0">
+	<title>readme.md</title>
+	<link rel="stylesheet" href="http://docs.helppag.es/bower_components/bootstrap/dist/css/bootstrap.min.css"/>
+	<link rel="stylesheet" href="http://docs.helppag.es/css/application.css"/>
+	<link rel="stylesheet" href="http://docs.helppag.es/css/syntax-highlight.css" media="screen" title="no title" charset="utf-8">
+	<link rel="stylesheet" href="../stylesheet.css"/>
+</head>
+<body>
+	<div class="top-bar">
+		<span class="glyphicon glyphicon-arrow-up"></span> Top
+	</div>
+	<div class="container" id="main-content">
+		<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#sidebar">
+			<span class="sr-only">Toggle navigation</span>
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+		</button>
+		<div class="row">
+			<div class="col-sm-9">
+				<h1 class="title"><a href="/" class="page-link" data-page="/">Stylesheet Template</a></h1>
 			</div>
-			<div class="row">
-				<div class="col-sm-3" id="sidebar">
-					<ul id="categories" class="list-unstyled">
-						<li class="category">
-							<ul class="list-unstyled root">
-								<li class="pages">
-									<ul class="nav nav-pills nav-stacked">
-										<li class="page-list">
-											<a href="#">
-												Clear Theme
-											</a>
-										</li>
-									</ul>
-								</li>
-								<li class="categories">
-									<ul class="nav nav-pills nav-stacked">
-										<li class="category">
-											<a class="category-toggle">
-												<span class="glyphicon glyphicon-chevron-down"></span>Themes
-											</a>
-											<ul class="list-unstyled non-root">
-												<li class="pages">
-													<ul class="nav nav-pills nav-stacked">
-														<li class="page-list">
-															<a href="#brown-bag">
-																Brown Bag
-															</a>
-														</li>
-														<li class="page-list">
-															<a href="#minimal-theme">
-																Minimal
-															</a>
-														</li>
-													</ul>
-												</li>
-											</ul>
-										</li>
-									</ul>
-								</li>
+			<div class="col-sm-3">
+				<form id="search">
+					<input type="text" class="form-control" placeholder="Search..." id="search-bar">
+				</form>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-sm-3">
+				<div class="collapse navbar-collapse" id="sidebar">
+					<ul id="navigation" class="nav nav-pills nav-stacked">
+						<li><a href="#">Page 1</a></li>
+						<li><a href="#">Page 2</a></li>
+						<li class="folder">
+							<a href="#">
+								<span class="glyphicon glyphicon-chevron-down"></span> Folder Name
+							</a>
+							<ul class="files nav nav-pills nav-stacked">
+								<li><a href="#">Page 3</a></li>
+								<li><a href="#">Page 4</a></li>
+								<li><a href="#">Page 5</a></li>
+								<li><a href="#">Page 6</a></li>
+								<li><a href="#">Page 7</a></li>
 							</ul>
 						</li>
 					</ul>
 				</div>
-				<div class="col-sm-9" id="inner-content">
-					<div class="page-template">
-						<div class="row">
-							<div class="col-sm-12">
-								<div class="page-container">
-									<div class="page-toc">
-										<h4>Contents</h4>
-										<ul class="nav">
-											<li>
-												<a class="toc-link toc">Link 1</a>
-											</li>
-											<li>
-												<a class="toc-link toc">Link 2</a>
-											</li>
-											<li>
-												<a class="toc-link toc">Long Link 3 - this one is really quite long</a>
-											</li>
-										</ul>
-									</div>
-									<div class="page">
-										<div class="page-contents pull-right">
-											<a class="toc btn btn-default"><span class="glyphicon glyphicon-align-left"></span></a>
-										</div>
-										<h1>H1 Title</h1>
-										<h2>H2 Title <a class="toc-link btn btn-xs btn-default">top</a></h2>
-										<h3>H3 Title <a class="toc-link btn btn-xs btn-default">top</a></h3>
-										<h4>H4 Title <a class="toc-link btn btn-xs btn-default">top</a></h4>
-										<h5>H5 Title</h5>
+			</div>
+			<div class="col-sm-9" id="inner-content">
+				<div class="row">
+					<div class="col-sm-12">
+						<div class="page-container">
+							<div class="page">
+								<h1 class='anchor'>Headers<a class='anchor-link' href=
+									'#headers'><span class='glyphicon glyphicon-link'></span></a></h1>
 
-										<h2>Lists</h2>
-										<ul>
-											<li>List item 1</li>
-											<li>List item 2</li>
-										</ul>
-										<ol>
-											<li>List item 1</li>
-											<li>List item 2</li>
-										</ol>
+									<h1 class='anchor'>Heading 1<a class='anchor-link' href=
+										'#heading-1'><span class='glyphicon glyphicon-link'></span></a></h1>
 
-										<h2>Paragraph</h2>
-										<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis, aliquid cumque optio aut ex libero velit nam voluptatibus officiis placeat ratione soluta? Similique, sit saepe libero accusamus excepturi laborum fugit! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit, explicabo, officiis voluptas animi fugiat quisquam itaque omnis deserunt officia natus ullam at tenetur excepturi illo vel error sit odit aliquam. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et, eveniet eum perspiciatis dicta laudantium autem omnis ab ea architecto alias voluptatum sit pariatur iure doloribus voluptatibus repellat doloremque incidunt reprehenderit.</p>
+										<h2 class='anchor'>Heading 2<a class='anchor-link' href=
+											'#heading-2'><span class='glyphicon glyphicon-link'></span></a></h2>
 
-										<h2>Code Syntax</h2>
-<pre><code class="hljs">
-<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">$initHighlight</span><span class="hljs-params">(block, flags)</span> {</span>
-  <span class="hljs-keyword">try</span> {
-    <span class="hljs-keyword">if</span> (block.className.search(<span class="hljs-regexp">/\bno\-highlight\b/</span>) != -<span class="hljs-number">1</span>)
-      <span class="hljs-keyword">return</span> processBlock(block.function, <span class="hljs-literal">true</span>, <span class="hljs-number">0x0F</span>) + <span class="hljs-string">' class=""'</span>;
-  } <span class="hljs-keyword">catch</span> (e) {
-    <span class="hljs-comment">/* handle exception */</span>
-    <span class="hljs-keyword">var</span> e4x =
-        <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-title">div</span>&gt;</span>Example
-            <span class="hljs-tag">&lt;<span class="hljs-title">p</span>&gt;</span>1234<span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>;</span>
-  }
-  <span class="hljs-keyword">for</span> (<span class="hljs-keyword">var</span> i = <span class="hljs-number">0</span> / <span class="hljs-number">2</span>; i &lt; classes.length; i++) { <span class="hljs-comment">// "0 / 2" should not be parsed as regexp</span>
-    <span class="hljs-keyword">if</span> (checkCondition(classes[i]) === <span class="hljs-literal">undefined</span>)
-      <span class="hljs-keyword">return</span> <span class="hljs-regexp">/\d+[\s/]/g</span>;
-  }
-  console.log(<span class="hljs-built_in">Array</span>.every(classes, <span class="hljs-built_in">Boolean</span>));
-}
-</code></pre>
+											<h3 class='anchor'>Heading 3<a class='anchor-link' href=
+												'#heading-3'><span class='glyphicon glyphicon-link'></span></a></h3>
 
-										<h2>Tables</h2>
-										<table>
-										    <tbody>
-										    	<tr><th>Title Field</th><th>Title Field 2</th><th>Title Field 3</th></tr>
-										    	<tr><td>table content</td><td>table content</td><td>table content</td></tr>
-										    	<tr><td>table content</td><td>table content</td><td>table content</td></tr>
-										    	<tr><td>table content</td><td>table content</td><td>table content</td></tr>
-										    	<tr><td>table content</td><td>table content</td><td>table content</td></tr>
-										    	<tr><td>table content</td><td>table content</td><td>table content</td></tr>
-											</tbody>
-										</table>
-										<h2>Random Text</h2>
-										<code>Code tag</code>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="row">
-							<div class="col-sm-12">
-								<div class="page-info">
-									
-									<span class="muted">Updated 2 hours ago | file-name.md</span>
-								</div>
-							</div>
-						</div>
-						</div></div>
-							</div>
-							<div class="row">
-								<div class="col-sm-12">
-									<div class="footer">
-										<a href="http://www.helppag.es">Created with HelpPag.es</a>
-									</div>
-								</div>
-							</div>
-						</div>
-	</body>
-</html>
+												<h4 class='anchor'>Heading 4<a class='anchor-link' href=
+													'#heading-4'><span class='glyphicon glyphicon-link'></span></a></h4>
+
+													<h5 class='anchor'>Heading 5<a class='anchor-link' href=
+														'#heading-5'><span class='glyphicon glyphicon-link'></span></a></h5>
+
+														<h6 class='anchor'>Heading 6<a class='anchor-link' href=
+															'#heading-6'><span class='glyphicon glyphicon-link'></span></a></h6>
+
+															<h1 class='anchor'>Text Content<a class='anchor-link' href=
+																'#paragraph'><span class='glyphicon glyphicon-link'></span></a></h1>
+
+																<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+																	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+																	veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+																	commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+																	velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+																	cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
+																	est laborum.</p>
+
+																	<p>This is another paragraph, this time with an <a href='http://helppag.es'
+																		title=''>embeded link in it</a>. Lorem ipsum dolor sit amet, consectetur
+																		adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore
+																		magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+																		laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+																		reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+																		pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
+																		officia deserunt mollit anim id est laborum.</p>
+
+																		<h1 class='anchor'>List Types<a class='anchor-link' href=
+																			'#list-types'><span class='glyphicon glyphicon-link'></span></a></h1>
+
+																			<h2 class='anchor'>Unordered List<a class='anchor-link' href=
+																				'#unordered-list'><span class='glyphicon glyphicon-link'></span></a></h2>
+
+																				<ul>
+																					<li style="list-style: none"></li>
+
+																					<li>List item 1</li>
+
+																					<li style="list-style: none"></li>
+
+																					<li>List item 2</li>
+
+																					<li style="list-style: none"></li>
+
+																					<li>List item 3</li>
+
+																					<li style="list-style: none"></li>
+
+																					<li>List item 4</li>
+
+																					<li style="list-style: none"></li>
+																				</ul>
+
+																				<h2 class='anchor'>Ordered List<a class='anchor-link' href=
+																					'#ordered-list'><span class='glyphicon glyphicon-link'></span></a></h2>
+
+																					<ol>
+																						<li style="list-style: none"></li>
+
+																						<li>List item 1</li>
+
+																						<li>List item 2</li>
+
+																						<li>List item 3</li>
+
+																						<li>List item 4</li>
+																					</ol>
+
+																					<h1 class='anchor'>Tables<a class='anchor-link' href='#tables'><span class=
+																						'glyphicon glyphicon-link'></span></a></h1>
+
+																						<div class='table-responsive'>
+
+
+																							<table class='table table-striped'>
+																								<thead>
+																									<tr>
+																										<th>Header 1</th>
+
+																										<th>Header 2</th>
+
+																										<th>Header 3</th>
+																									</tr>
+																								</thead>
+
+																								<tbody>
+																									<tr>
+																										<td>Division 1</td>
+
+																										<td>Division 2</td>
+
+																										<td>Division 3</td>
+																									</tr>
+
+																									<tr>
+																										<td>Division 1</td>
+
+																										<td>Division 2</td>
+
+																										<td>Division 3</td>
+																									</tr>
+
+																									<tr>
+																										<td>Division 1</td>
+
+																										<td>Division 2</td>
+
+																										<td>Division 3</td>
+																									</tr>
+																								</tbody>
+																							</table>
+																						</div>
+
+																						<h1 class='anchor'>Code<a class='anchor-link' href='#code'><span class=
+																							'glyphicon glyphicon-link'></span></a></h1>
+
+																							<p>HelpPag.es supports many different languages, here&#39;s just a quick
+																								example of a few.</p>
+																								<pre><code class='language-ruby'>module HelpPages
+	class ClassName
+		def initialize
+			@option = "asdf"
+		end
+	end
+end</code></pre>
+
+																								<p>And here&#39;s what your code will look like if we don&#39;t support
+																									your language. But don&#39;t worry, just let us know and we&#39;ll get it
+																									added for you</p>
+																									<pre><code>var key = "value"</code></pre>
+
+																									<p>You can also put code <code>inline</code> as well.</p>
+
+																									<h1 class='anchor'>Media<a class='anchor-link' href='#media'><span class=
+																										'glyphicon glyphicon-link'></span></a></h1>
+
+																										<h2 class='anchor'>Images<a class='anchor-link' href='#images'><span class=
+																											'glyphicon glyphicon-link'></span></a></h2>
+
+																											<p><img alt='Arches National Park' src='arches_park.jpg'
+																												title=''></p>
+
+																												<h2 class='anchor'>Youtube Videos<a class='anchor-link' href=
+																													'#youtube-videos'><span class='glyphicon glyphicon-link'></span></a></h2>
+
+																													<p>You can embed youtube videos directly in your docs just by linking to
+																														them. They&#39;ll get rendered like this:</p>
+
+																														<p><iframe class='youtube-embed' frameborder='0' height='315' src=
+																															'http://www.youtube.com/embed/HzypOnklG60' width='560'></iframe></p>
+																														</div>
+																													</div>
+																												</div>
+																											</div>
+																											<div class="row">
+																												<div class="col-sm-12">
+																													<div class="page-info">
+																														<span class="muted"><a href="https://github.com/stretchr/docs/blob/master/README.md" target="_blank">index</a></span>
+																													</div>
+																												</div>
+																											</div>
+																										</div>
+																									</div>
+																									<div class="row">
+																										<div class="col-sm-12">
+																											<div class="footer">
+																												<a href="http://www.helppag.es">Created with HelpPag.es</a>
+																											</div>
+																										</div>
+																									</div>
+																								</div>
+																								<script src="http://docs.helppag.es/js/services/prism.js" charset="utf-8"></script>
+																							</body>
+																							</html>
